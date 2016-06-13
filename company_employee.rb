@@ -1,5 +1,7 @@
 class Company
- 
+  attr_reader :company_name
+  attr_accessor : employees
+
   def initialize(name)
     @company_name  = name
     @employees   = []
@@ -24,7 +26,9 @@ end
  
  
 class Employee
- 
+  attr_reader     :id
+  attr_accessor   :name
+  attr_accessor   :position
   def initialize(name, position)
     @name     = name
     @position = position
